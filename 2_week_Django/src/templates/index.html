@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+<div class="container">
+  <div class="col-xs-12">
+    <div class = "colorful-text">
+      <div> hello World~~ </div>
+
+      {% for article in article_list %}
+      <div>  {{ article.title }}
+      <span class="label label-primary">{{ article.contents}}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div> hello World~~ </div>
+    <div> hello World~~ </div>
+    <div> hello World~~ </div>
+    <i class="fa fa-camera-retro fa-5x fa-pulse"></i>
+  </div>
+</div>
+
+
+{% endblock %}
